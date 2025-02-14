@@ -31,14 +31,11 @@ dataset <- data.frame(
 # Normality check (Shapiro-Wilk Test):
 shapiro.test(dataset$income) # If p<0.05, variable is not normally distributed
 
-
 # Normality check (Q-Q Plot)
 qqnorm(dataset$age)
 qqline(dataset$age, col = "red", lwd = 2)  # Should follow the line if normally distributed
 
-
 # If dependent variable is not normally distributed and binary, use Binomial
-
 # If dependent variable is not normally distributed and count data, use Poisson
 
 
