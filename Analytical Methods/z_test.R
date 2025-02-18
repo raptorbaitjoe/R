@@ -1,1 +1,7 @@
-# look up z tests
+### Z-Test
+
+# Requirements:
+# 
+# 
+# 
+# 
