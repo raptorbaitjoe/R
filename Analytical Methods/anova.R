@@ -1,1 +1,7 @@
-# look up ANOVA
+### Analysis of Variance (ANOVA)
+
+# Requirements:
+# 
+# 
+# 
+# 
