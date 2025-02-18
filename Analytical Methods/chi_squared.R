@@ -7,7 +7,7 @@
 # Large-enough sample size, >20-30 observations is best
 
 
-## Setup
+####                            Setup and Libraries                                       ####
 
 # Load necessary library
 
@@ -32,7 +32,7 @@ energy_table <- data.frame(
 head(energy_table)
 
 
-## Create Contingency Table and perform Chi-Squared Test
+####                    Create Contingency Table and perform Chi-Squared Test             ####
 
 
 # Create a Contingency Table (Chi-Squared formatted table)
@@ -58,7 +58,7 @@ print(chi_square_test)
 
 
 
-### Extra information from th Chi-Squared Test
+####                  Extra information from the Chi-Squared Test                           ####
 
 ## Supplementary Statistics
 
