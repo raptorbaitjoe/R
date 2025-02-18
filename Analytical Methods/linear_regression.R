@@ -1,3 +1,10 @@
+### Linear Regression
+
+# Requirements:
+# The relationship between the independent variables (X) and the dependent variable (Y) must be linear.
+
+####                               Setup and Libraries                              ####
+
 # Install packages (if necessary)
 install.packages('ggplot2')
 install.packages('car')
@@ -5,6 +12,9 @@ install.packages('car')
 # Load necessary libraries
 library(ggplot2)  # For visualization
 library(car)      # For additional regression diagnostics
+
+
+####                               Linear Regression Model                   ####
 
 # 1. Check for linearity using a scatter plot
 ## Look for a roughly straight-line relationship. 
@@ -14,6 +24,8 @@ abline(lm(y ~ x, data = data), col = "red")
 
 # 2. Fit the linear regression model
 model <- lm(y ~ x, data = data)
+
+####                               Linear Regression Checks                   ####       
 
 # 3. Check for normality of residuals
 ## Histogram needs a bell curve and residuals on the scatter plot to follow the line.
@@ -36,6 +48,8 @@ abline(h = 0, col = "red")
 ## Only applies when multiple predictors are present (multiple regression).
 vif_values <- vif(model)
 print(vif_values)
+
+####                               Summary and Results                   ####
 
 # 6. Summary of the regression model
 summary(model)
