@@ -1,6 +1,13 @@
-####                     Generalised Linear Models                              ####
+### Generalised Linear Models
 
-# If y is not continuous or normally distributed, use glm() with the appropriate family
+# Requirements:
+# Generalized Linear Models (GLMs) are a type of regression model, but they extend the standard linear regression to handle a wider range of data types and distributions
+# Use when your dependent (response) variable does not follow a normal distribution (e.g., binary outcomes, counts, or skewed continuous data)
+# Use a GLM if your dependent variable is:
+#  Binary (e.g., yes/no outcomes → Logistic Regression)
+#  Counts (e.g., number of defects → Poisson Regression)
+#  Proportions (e.g., percentage of successes → Binomial Model)
+#  Skewed Continuous (e.g., positive-only data → Gamma Model)
 
 ####                            Libraries                                       ####
 
