@@ -19,8 +19,15 @@ library(car)      # For additional regression diagnostics
 # 1. Check for linearity using a scatter plot
 ## Look for a roughly straight-line relationship. 
 ## If non-linear, options include transforming variable, polynomial regression or non-linear regression.
-plot(data$x, data$y, main = "Scatter Plot of x vs y", xlab = "x", ylab = "y")
-abline(lm(y ~ x, data = data), col = "red") 
+ggplot(data, aes(x = data$x, y = data$y)) +
+  geom_point(alpha = 0.4) +
+  geom_smooth(method = "lm", se = FALSE, color = "red") +
+  labs(
+    title = "Scatter Plot of x vs y",
+    x = "x",
+    y = "y"
+  ) +
+  theme_minimal()
 
 # 2. Fit the linear regression model
 model <- lm(y ~ x, data = data)
