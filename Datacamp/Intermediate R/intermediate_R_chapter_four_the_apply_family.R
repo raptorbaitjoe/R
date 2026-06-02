@@ -196,4 +196,22 @@ freezing_l <- sapply(temp, below_zero)
 # Are freezing_s and freezing_l identical?
 identical(freezing_s, freezing_l)
 
+
 ### vapply
+# explicitly specify output format
+
+# Definition of basics()
+basics <- function(x) {
+  c(min = min(x), mean = mean(x), max = max(x))
+}
+
+# Apply basics() over temp using vapply()
+vapply(temp, basics, numeric(3))
+
+# Convert to vapply() expression
+vapply(temp, max, numeric(1))
+
+# Convert to vapply() expression
+vapply(temp, function(x, y) { mean(x) > y }, logical(1), y = 5)
+
+
